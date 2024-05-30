@@ -1,0 +1,11 @@
+README.md
+setup.py
+iAppGone.egg-info/PKG-INFO
+iAppGone.egg-info/SOURCES.txt
+iAppGone.egg-info/dependency_links.txt
+iAppGone.egg-info/entry_points.txt
+iAppGone.egg-info/requires.txt
+iAppGone.egg-info/top_level.txt
+iappgone/__init__.py
+iappgone/__main__.py
+iappgone/core.py

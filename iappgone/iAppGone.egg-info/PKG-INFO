@@ -1,0 +1,83 @@
+Metadata-Version: 2.1
+Name: iAppGone
+Version: 0.1
+Summary: Fully Functional Uninstaller for Mac OS
+Home-page: https://github.com/h4rithd/iAppGone
+Download-URL: https://github.com/h4rithd/iAppGone/archive/refs/tags/v0.1.tar.gz
+Author: Harith Dilshan (h4rithd)
+Author-email: info@h4rithd.com
+Project-URL: Bug Reports, https://github.com/h4rithd/iAppGone/issues
+Project-URL: Source, https://github.com/h4rithd/iAppGone
+Keywords: uninstaller,macos,applications
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: MacOS
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+Requires-Dist: pandas
+Requires-Dist: tabulate
+Requires-Dist: colorama
+
+# iAppGone
+
+**iAppGone** is a command-line tool for macOS that allows you to list and uninstall applications from different sources like `/Applications`, Homebrew, and the App Store. It helps you reclaim disk space by completely removing applications and their associated artifacts.
+
+## Features
+
+- List all installed applications.
+- Uninstall a specific application.
+- Uninstall multiple applications by providing their index numbers.
+- Supports applications installed via `/Applications`, Homebrew, and the App Store.
+- Removes associated artifacts such as caches, preferences, and logs.
+
+## Requirements
+
+- Python 3
+
+## Installation
+
+```bash
+pip install pandas tabulate colorama
+git clone https://github.com/h4rithd/iAppGone.git
+cd iAppGone
+sudo python3 iAppGone.py -l
+```
+
+## Usage
+### List all installed applications:
+```bash
+sudo python3 iAppGone.py -l
+```
+
+### Uninstall a specific application:
+```bash
+sudo python3 iAppGone.py -u AppName
+```
+Replace AppName with the name of the application you want to uninstall.
+
+### Uninstall multiple applications by index numbers:
+```bash
+sudo python3 iAppGone.py -m 1,2,4
+```
+Replace 1,2,4 with the index numbers of the applications you want to uninstall, separated by commas.
+
+### Options
+```
+-l, --list: List all installed applications.
+-u, --app: Uninstall a specific application by name.
+-m, --multi: Uninstall multiple applications by index numbers.
+```
+
+## Contributing
+
+Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or a pull request.
+
+## License
+
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+
+
