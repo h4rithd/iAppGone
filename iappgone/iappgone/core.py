@@ -230,9 +230,9 @@ def parse_arguments():
                          By h4rithd.com
 
 Usage:
-    sudo python3 iAppGone.py -l
-    sudo python3 iAppGone.py -u AppName
-    sudo python3 iAppGone.py -m 1,2,4
+    iappgone -l
+    iappgone -u AppName
+    iappgone -m 1,2,4
         '''))
 
     parser.add_argument("-l", "--list", action="store_true", help="List all installed applications")
