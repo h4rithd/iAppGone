@@ -17,6 +17,10 @@
 ## Installation
 
 ```bash
+pip install iAppGone
+```
+or
+```
 pip install pandas tabulate colorama
 git clone https://github.com/h4rithd/iAppGone.git
 cd iAppGone
